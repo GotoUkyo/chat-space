@@ -33,7 +33,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :chats
-- has_many :groups
+- has_many :groups, through: :groups_users
 
 ## groupテーブル
 
@@ -43,21 +43,21 @@ Things you may want to cover:
 |user_id|integer|null: false|
 
 ### Association
-- belongs_to :user
-- belongs_to :
+- has_many :users, through: :groups_users
+- has_many :chats
 
 ## chatテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|string|null: false|
+|image|string||
 |user_id|integer|null: false|
 |group_id|integer|null: false|
 
 ### Association
 - belongs_to :user
-- belongs_to :
+- belongs_to :group
 
 ## groups_usersテーブル
 
