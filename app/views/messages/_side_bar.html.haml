@@ -4,7 +4,9 @@
       .top-items__name
         masa
       .top-items__icons
-        = icon('far', 'edit')
-        = icon("fa", "cog") 
+        =link_to "#" do
+          = icon('far', 'edit', class: "top-items__icons--btn")
+        =link_to "#" do
+          = icon('fa', 'cog', class: "top-items__icons--btn") 
   .side-bar__group-list
     <サイドバー>
