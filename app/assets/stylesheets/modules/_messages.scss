@@ -24,9 +24,10 @@
   &__group-info{
     height: 100px;
     background-color: #ffffff;
+    border-bottom: #eeeeee solid 1px;
   }
   &__message-list{
-    height: calc(100vh - 100px - 90px);
+    height: calc(100vh - 190px);
     background-color: #fafafa;
   }
   &__message-form{
