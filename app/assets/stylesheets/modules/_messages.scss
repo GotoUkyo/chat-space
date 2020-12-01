@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     .top-items{
-      background-color: #d8d8d8;
       height: 20px;
       width: 260px;
       margin: 0 20px;
@@ -23,7 +22,8 @@
       justify-content: space-between;
       align-items: center;
       &__name{
-
+        color: #ffffff;
+        font-size: 16px;
       }
       &__icons{
         width: 60px;
