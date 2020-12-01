@@ -3,13 +3,21 @@
   display: flex;
 }
 
-.side_bar {
+.side-bar {
   width: 300px;
   height: 100vh;
   background-color: #253141;
+position: relative;
+  &__user-name{
+    width: 300px;
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    position: absolute;
+    top: 100px;
+  }
 }
 
-.chat_main{
+.chat-main{
   width: calc(100vw - 300px);
   height: 100vh;
   background-color: #ffffff;
