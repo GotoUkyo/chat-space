@@ -60,6 +60,16 @@
     height: 100px;
     background-color: #ffffff;
     border-bottom: #eeeeee solid 1px;
+    padding: 35px 0 0 40px;
+    .info-title{
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 15px;
+    }
+    .info-member{
+      font-size: 12px;
+      color: #999999;
+    }
   }
   &__message-list{
     height: calc(100vh - 190px);
