@@ -39,13 +39,17 @@
   &__group-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    font: bold;
-    color: #ffffff;
+    padding: 20px 20px 40px 20px;
     .list-name{
       font-size: 15px;
+      font: bold;
+      color: #ffffff;
+      margin-bottom: 5px;
     }
     .list-message{
       font-size: 11px;
+      font: bold;
+      color: #ffffff; 
     }
   }
 }
