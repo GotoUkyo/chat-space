@@ -75,14 +75,18 @@
       }
     }
     .info-edit{
-      color: #38aef0;
+      font-size: 16px;
       border: solid 1px #38aef0;
       display: flex;
       align-items: center;
       padding: 0 20px;
-      margin: 28px 40px 28px 0;
+      margin: 28px 40px 0 0;
       height: 40px;
       width: 72px;
+      .edit-link{
+        text-decoration: none;
+        color: #38aef0;
+      }
     }
   }
   &__message-list{
