@@ -24,3 +24,8 @@
     .text
       今日は夜から雨
   .chat-main__message-form
+    .input-box
+      %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+      %label{class: "input-box__image"}
+        = icon('fas', 'image')
+    %input{type: "submit", class: "submit-btn", value: "Send"}

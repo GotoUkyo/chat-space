@@ -114,5 +114,22 @@
   &__message-form{
     height: 90px;
     background-color: #d2d2d2;
+    .input-box{
+      display: flex;
+      &__text{
+        height: 50px;
+        padding-left: 10px;
+        border-style: none;
+      }
+    }
+    .submit-btn{
+      height: 50px;
+      color: #fff;
+      font-size: 16px;
+      background-color: #38aef0;
+      padding: 0 30px;
+      margin: 0 40px 0 15px;
+      border-style: none;
+    }
   }
 }
