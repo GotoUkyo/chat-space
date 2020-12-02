@@ -1,0 +1,34 @@
+.chat-main
+  .chat-main__group-info
+    .info-tops
+      .info-tops__title
+        test
+      .info-tops__member
+        Member : masa
+    .info-edit
+      = link_to "#", class: "edit-link" do
+        Edit
+        
+  .chat-main__message-list
+    .name-day
+      .name-day__name
+        masa
+      .name-day__day
+        2019/11/20(WED) 17:43:01
+    .text
+      おはよう！
+    .name-day
+      .name-day__name
+        masa
+      .name-day__day
+        2019/11/20(wed) 17:43:34
+    .text
+      今日は夜から雨
+
+  .chat-main__message-form
+    .input-box
+      %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+      %label{class: "input-box__image"}
+        = icon('fas', 'image')
+        %input{type: "file", class: "input-box__image__file"}
+    %input{type: "submit", class: "submit-btn", value: "Send"}
