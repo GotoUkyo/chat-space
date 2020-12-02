@@ -60,15 +60,29 @@
     height: 100px;
     background-color: #ffffff;
     border-bottom: #eeeeee solid 1px;
-    padding: 35px 0 0 40px;
-    .info-title{
-      font-size: 20px;
-      color: #333333;
-      margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    .info-tops{
+      &__title{
+        font-size: 20px;
+        color: #333333;
+        padding: 35px 0 15px 40px;
+      }
+      &__member{
+        font-size: 12px;
+        color: #999999;
+        padding-left: 40px;
+      }
     }
-    .info-member{
-      font-size: 12px;
-      color: #999999;
+    .info-edit{
+      color: #38aef0;
+      border: solid 1px #38aef0;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      margin: 28px 40px 28px 0;
+      height: 40px;
+      width: 72px;
     }
   }
   &__message-list{
