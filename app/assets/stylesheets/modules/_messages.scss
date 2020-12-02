@@ -92,6 +92,24 @@
   &__message-list{
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    .name-day{
+      padding: 35px 0 12px 40px;
+      display: flex;
+      &__name{
+        font-size: 16px;
+        color: #333333;
+      }
+      &__day{
+        font-size: 12px;
+        color: #999999;
+        padding-left: 12px;
+      }
+    }
+    .text{
+      font-size: 14px;
+      color: #434A54;
+      padding: 0 0 11px 40px;
+    }
   }
   &__message-form{
     height: 90px;
