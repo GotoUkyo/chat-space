@@ -38,11 +38,8 @@
           padding-left: 5px;
           color: #ffffff;
         }
-
       }
-
     }
-
   }
 
   &__group-list{
@@ -62,9 +59,7 @@
       font: bold;
       color: #ffffff; 
     }
-
   }
-
 }
 
 .chat-main{
@@ -90,7 +85,6 @@
         color: #999999;
         padding-left: 40px;
       }
-
     }
 
     .info-edit{
@@ -107,9 +101,7 @@
         text-decoration: none;
         color: #38aef0;
       }
-
     }
-
   }
 
   &__message-list{
@@ -130,7 +122,6 @@
         color: #999999;
         padding-left: 12px;
       }
-
     }
 
     .text{
@@ -138,7 +129,6 @@
       color: #434A54;
       padding: 0 0 11px 40px;
     }
-
   }
 
   &__message-form{
@@ -156,7 +146,7 @@
         height: 50px;
         width: 100%;
         padding: 0 40px 0 10px;
-        border-style: none;
+        border: none;
       }
 
       &__image{
@@ -167,9 +157,7 @@
         &__file{
           display: none;
         }
-
       }
-
     }
 
     .submit-btn{
@@ -181,7 +169,5 @@
       margin-left: 15px;
       border: none;
     }
-
   }
-
 }
