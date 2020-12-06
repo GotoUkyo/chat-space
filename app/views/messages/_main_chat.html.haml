@@ -10,20 +10,7 @@
         Edit
         
   .chat-main__message-list
-    .name-day
-      .name-day__name
-        masa
-      .name-day__day
-        2019/11/20(WED) 17:43:01
-    .text
-      おはよう！
-    .name-day
-      .name-day__name
-        masa
-      .name-day__day
-        2019/11/20(wed) 17:43:34
-    .text
-      今日は夜から雨
+    = render @messages
 
   .chat-main__message-form
     = form_with model: [@group, @message], html: {class:"Form"}, local: true do |f|
