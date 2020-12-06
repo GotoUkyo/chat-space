@@ -2,12 +2,13 @@
   .chat-main__group-info
     .info-tops
       .info-tops__title
-        test
+        = @group.name
       .info-tops__member
-        Member : masa
+        Member :
+        - @group.users.each do |user|
+          = user.name
     .info-edit
-      = link_to "#", class: "edit-link" do
-        Edit
+      = link_to "Edit", edit_group_path(@group.id), class: "edit-link"
         
   .chat-main__message-list
     = render @messages
