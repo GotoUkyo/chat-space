@@ -57,7 +57,8 @@
     .list-message{
       font-size: 11px;
       font: bold;
-      color: #ffffff; 
+      color: #ffffff;
+      margin-bottom: 60px;
     }
   }
 }
@@ -135,7 +136,10 @@
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    display: flex;
+
+    .Form{
+      display: flex;
+    }
 
     .input-box{
       display: flex;
