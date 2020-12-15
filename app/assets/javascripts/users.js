@@ -15,8 +15,9 @@ $(function() {
                   <p class="ChatMember__name">ユーザーが見つかりません</p>
                 </div>
                 `;
+    $("#UserSearchResult").append(html);
   }
-  
+
   $("UserSearch__field").on("keyup",function() {
     let input = $("UserSearch__field").val();
     $.ajax({
