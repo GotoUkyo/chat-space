@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="chat-main__message-list">
+        `<div class="chat-main__field__list">
           <div class="name-day">
             <siv class="name-day__name">
               ${message.user_name}
@@ -21,9 +21,12 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="chat-main__message-list">
+      `<div class="chat-main__field__list">
         <div class="name-day">
           <div class="name-day__name">
+            ${message.user_name}
+          </div>
+          <div class="name-day__day">
             ${message.created_at}
           </div>
         </div>
@@ -51,8 +54,8 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
-      $('.MessageField').append(html);
-      $('form')[0].reset();
+      $('.chat-main__field').append(html);
+      $('.Form')[0].reset();
     })
   });
 });
