@@ -57,6 +57,7 @@ $(function(){
       $('.chat-main__field').append(html);
       $('.chat-main__field').animate({ scrollTop: $('.chat-main__field')[0].scrollHeight});
       $('.Form')[0].reset();
+      $('input').prop('disabled', false);
     })
   });
 });
