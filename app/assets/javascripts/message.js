@@ -55,6 +55,7 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data);
       $('.chat-main__field').append(html);
+      $('.chat-main__field').animate({ scrollTop: $('.chat-main__field')[0].scrollHeight});
       $('.Form')[0].reset();
     })
   });
