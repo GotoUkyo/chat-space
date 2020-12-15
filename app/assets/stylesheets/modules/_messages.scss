@@ -46,6 +46,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 40px 20px;
+    overflow: scroll;
 
     .list-name{
       font-size: 15px;
@@ -105,30 +106,34 @@
     }
   }
 
-  &__message-list{
+  &__field{
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    overflow: scroll;
 
-    .name-day{
-      padding: 35px 0 12px 40px;
-      display: flex;
+    &__list{
 
-      &__name{
-        font-size: 16px;
-        color: #333333;
+      .name-day{
+        padding: 35px 0 12px 40px;
+        display: flex;
+
+        &__name{
+          font-size: 16px;
+          color: #333333;
+        }
+
+        &__day{
+          font-size: 12px;
+          color: #999999;
+          padding-left: 12px;
+        }
       }
 
-      &__day{
-        font-size: 12px;
-        color: #999999;
-        padding-left: 12px;
+      .text{
+        font-size: 14px;
+        color: #434A54;
+        padding: 0 0 11px 40px;
       }
-    }
-
-    .text{
-      font-size: 14px;
-      color: #434A54;
-      padding: 0 0 11px 40px;
     }
   }
 
