@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="chat-main__field__list">
+        `<div class="chat-main__field__list" data-message-id=${message.id}>
           <div class="name-day">
             <siv class="name-day__name">
               ${message.user_name}
@@ -21,7 +21,7 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="chat-main__field__list">
+      `<div class="chat-main__field__list" data-message-id=${message.id}>
         <div class="name-day">
           <div class="name-day__name">
             ${message.user_name}
