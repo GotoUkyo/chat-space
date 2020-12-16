@@ -63,28 +63,4 @@ $(function(){
       alert("メッセージ送信に失敗しました");
     });
   });
-
-  let reloadMessages = function(){
-    let last_message_id = $('.chat-main__field__list:last').data("message-id") || 0;
-    $.ajax({
-      url: "api/messages",
-      type: 'get',
-      dataType: 'json',
-      data: {id: last_message_id}
-    })
-    .done(function(messages) {
-      if (messages.length !== 0) {
-        let insertHTML = '';
-        $.each(messages, function(i, message) {
-          insertHTML += buildHTML(message)
-        });
-        $('.chat-main__field').append(insertHTML);
-        $('.chat-main__field').animate({ scrollTop: $('.chat-main__field')[0].scrollHeight});
-      }
-    })
-    .fail(function() {
-      alert('error');
-    });
-  };
-  setInterval(reloadMessages, 7000);
 });
