@@ -4,7 +4,7 @@ $(function(){
       let html =
         `<div class="chat-main__field__list" data-message-id=${message.id}>
           <div class="name-day">
-            <siv class="name-day__name">
+            <div class="name-day__name">
               ${message.user_name}
             </div>
             <div class="name-day__day">
