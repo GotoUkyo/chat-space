@@ -15,7 +15,7 @@ $(function(){
             <p class="Message__content">
               ${message.content}
             </p>
-            <img class="Message__image" src=${message.image}>
+            <img class="Message__image" src="${message.image}">
           </div>
         </div>`
       return html;
@@ -46,7 +46,7 @@ $(function(){
     let url = $(this).attr('action');
     $.ajax({
       url: url,
-      type: 'POST',
+      type: "POST",
       data: formData,
       dataType: 'json',
       processData: false,
@@ -56,11 +56,12 @@ $(function(){
       let html = buildHTML(data);
       $('.chat-main__field').append(html);
       $('.chat-main__field').animate({ scrollTop: $('.chat-main__field')[0].scrollHeight});
-      $('.Form')[0].reset();
-      $('input').prop('disabled', false);
+      $('Form')[0].reset();
+      $('.submit-btn').prop("disabled", false);
     })
-    .fail(function(){
+    .fail(function() {
       alert("メッセージ送信に失敗しました");
+      $('.submit-btn').prop("disabled", false);
     });
   });
 });
