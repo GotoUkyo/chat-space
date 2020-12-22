@@ -7,7 +7,7 @@ $(function(){
             <div class="name-day__name">
               ${message.user_name}
             </div>
-            <div class="name-day__day>
+            <div class="name-day__day">
               ${message.created_at}
             </div>
           </div>
@@ -15,14 +15,14 @@ $(function(){
             <p class="Message__content">
               ${message.content}
             </p>
-            <img class="Message__image" scr="${message.image}">
+            <img class="Message__image" src="${message.image}">
           </div>
         </div>`
       return html;
     } else {
       let html =
       `<div class="chat-main__field__list" data-message-id=${message.id}>
-        <div class="name-day>
+        <div class="name-day">
           <div class="name-day__name">
             ${message.user_name}
           </div>
